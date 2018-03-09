@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ComponentNameComponent } from './side-nav/component-name.component';
+import { MainContentComponent } from './main-content/main-content.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentNameComponent
+    ComponentNameComponent,
+    MainContentComponent
   ],
   imports: [
     BrowserModule
