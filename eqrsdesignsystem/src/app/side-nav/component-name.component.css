@@ -30,3 +30,8 @@
 .sidebar-heading span {
     font-weight: 700;
 }
+
+.nav-item-active {
+    background: #0071bc;
+    border-left: 5px solid #fff;
+}
