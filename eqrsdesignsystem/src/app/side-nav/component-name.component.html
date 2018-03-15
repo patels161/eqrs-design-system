@@ -1,66 +1,59 @@
 <nav class="col-md-2 d-none d-md-block eqrs-primary-darkest sidebar">
-
    <h1 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1"> EQRS </h1>
    <p class="justify-content-between align-items-center px-3 mb-1"> Design system </p>
-
-
-          <div class="sidebar-sticky">
-
-         
-
-          <ul class="nav flex-column">
-              <li class="nav-item collapse-li">
-                <a href="#firstSubmenu" class="nav-link" data-toggle="collapse" aria-expanded="false"> Getting started </a>  
-                <ul class="collapse" id="firstSubmenu" >
-                  <li> Principles </li>
-                  <li> Guidelines </li>
-                  <li> Accessibility </li>
-                  <li> Responsive design </li>
-                </ul>
-              </li>
-
-              <li class="nav-item collapse-li">
-                <a href="#secondSubmenu" class="nav-link" data-toggle="collapse" aria-expanded="false"> Style </a>  
-                <ul class="collapse" id="secondSubmenu" >
-                  <li> Colors </li>
-                  <li> Grid </li>
-                  <li> Iconography </li>
-                  <li> Typography </li>
-                </ul>
-              </li>
-
-              <li class="nav-item collapse-li">
-                <a href="#thirdSubmenu" class="nav-link" data-toggle="collapse" aria-expanded="false"> Components </a>  
-                <ul class="collapse" id="thirdSubmenu" >
-                  <li> Overview </li>
-                  <li> Accordion </li>
-                  <li> Alerts </li>
-                  <li> Buttons </li>
-                  <li> Checkbox </li>
-                  <li> Data table </li>
-                  <li> Dropdown </li>
-                  <li> Inputs </li>
-                  <li> Labels </li>
-                  <li> Modal </li>
-                  <li> Progress indicator </li>
-                  <li> Radion button </li>
-                  <li> Search </li>
-                  <li> Tooltips </li>
-                </ul>
-              </li>
-
-              <li class="nav-item collapse-li">
-                <a href="#fourthSubmenu" class="nav-link" data-toggle="collapse" aria-expanded="false"> Other </a>  
-                <ul class="collapse" id="fourthSubmenu" >
-                  <li> item 1 </li>
-                  <li> item 2 </li>
-                  <li> item 3 </li>
-                </ul>
-              </li>
-
-</ul>
-
-
-
+      <div class="sidebar-sticky">
+        <div class="nav flex-column">
+          <div class="nav-item collapse-li">
+            <div (click)="flag = !flag" class="nav-link" data-toggle="collapse" aria-expanded="false"> Getting started</div>
+              <div *ngIf="flag" class="collapse">
+                <div> Principles </div>
+                <div> Guidelines </div>
+                <div> Accessibility </div>
+                <div> Responsive design </div>
+              </div>
           </div>
-        </nav>
+        </div>
+      </div>
+</nav>
+
+
+              <!--<li class="nav-item collapse-li">-->
+                <!--<a href="#secondSubmenu" class="nav-link" data-toggle="collapse" aria-expanded="false"> Style </a>-->
+                <!--<ul class="collapse" id="secondSubmenu" >-->
+                  <!--<li> Colors </li>-->
+                  <!--<li> Grid </li>-->
+                  <!--<li> Iconography </li>-->
+                  <!--<li> Typography </li>-->
+                <!--</ul>-->
+              <!--</li>-->
+
+              <!--<li class="nav-item collapse-li">-->
+                <!--<a href="#thirdSubmenu" class="nav-link" data-toggle="collapse" aria-expanded="false"> Components </a>-->
+                <!--<ul class="collapse" id="thirdSubmenu" >-->
+                  <!--<li> Overview </li>-->
+                  <!--<li> Accordion </li>-->
+                  <!--<li> Alerts </li>-->
+                  <!--<li> Buttons </li>-->
+                  <!--<li> Checkbox </li>-->
+                  <!--<li> Data table </li>-->
+                  <!--<li> Dropdown </li>-->
+                  <!--<li> Inputs </li>-->
+                  <!--<li> Labels </li>-->
+                  <!--<li> Modal </li>-->
+                  <!--<li> Progress indicator </li>-->
+                  <!--<li> Radion button </li>-->
+                  <!--<li> Search </li>-->
+                  <!--<li> Tooltips </li>-->
+                <!--</ul>-->
+              <!--</li>-->
+
+              <!--<li class="nav-item collapse-li">-->
+                <!--<a href="#fourthSubmenu" class="nav-link" data-toggle="collapse" aria-expanded="false"> Other </a>-->
+                <!--<ul class="collapse" id="fourthSubmenu" >-->
+                  <!--<li> item 1 </li>-->
+                  <!--<li> item 2 </li>-->
+                  <!--<li> item 3 </li>-->
+                <!--</ul>-->
+              <!--</li>-->
+
+
