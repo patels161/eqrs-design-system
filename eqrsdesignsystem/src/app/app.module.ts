@@ -14,6 +14,10 @@ import { GridComponent } from './main-content/style/grid/grid.component';
 import { IconographyComponent } from './main-content/style/iconography/iconography.component';
 import { TypographyComponent } from './main-content/style/typography/typography.component';
 import {StyleModule} from "./main-content/style/style.module";
+import { PrinciplesComponent } from './main-content/getting-started/principles/principles.component';
+import { GuidelinesComponent } from './main-content/getting-started/guidelines/guidelines.component';
+import { AccessibilityComponent } from './main-content/getting-started/accessibility/accessibility.component';
+import { ResponsiveDesignComponent } from './main-content/getting-started/responsive-design/responsive-design.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '',  pathMatch: 'full'},
@@ -30,7 +34,11 @@ const appRoutes: Routes = [
     MainContentComponent,
     GettingStartedComponent,
     StyleComponent,
-    ComponentsComponent
+    ComponentsComponent,
+    PrinciplesComponent,
+    GuidelinesComponent,
+    AccessibilityComponent,
+    ResponsiveDesignComponent
   ],
   imports: [
     BrowserModule,

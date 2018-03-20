@@ -18,10 +18,10 @@
             <div (click)="flag1 = !flag1" class="nav-link" data-toggle="collapse" aria-expanded="false">
               <span>Style   </span>    <i class="fa fa-chevron-down pull-right"></i> </div>
               <div *ngIf="flag1" class="child-nav-items">
-                <div [routerLink] = "['/colors']"> Colors </div>
-                <div [routerLink] = "['/grid']"> Grid </div>
-                <div [routerLink] = "['/iconography']"> Iconography </div>
-                <div [routerLink] = "['/typography']"> Typography </div>
+                <div [routerLink] = "['/colors']" routerLinkActive="nav-item-active"> Colors </div>
+                <div [routerLink] = "['/grid']" routerLinkActive="nav-item-active"> Grid </div>
+                <div [routerLink] = "['/iconography']" routerLinkActive="nav-item-active"> Iconography </div>
+                <div [routerLink] = "['/typography']" routerLinkActive="nav-item-active"> Typography </div>
               </div>
           </div>
 
