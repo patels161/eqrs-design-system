@@ -5,7 +5,7 @@
         <div class="nav flex-column">
           <div class="nav-item collapse-li">
             <div (click)="flag = !flag" class="nav-link" data-toggle="collapse" aria-expanded="false">
-              <span> Getting started</span>  <i class="fa fa-chevron-down pull-right"></i>  </div>
+              <span> Getting started</span>  <i class="fa pull-right" [ngClass]="(flag) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>  </div>
               <div *ngIf="flag" class="child-nav-items">
                 <div> Principles </div>
                 <div> Guidelines </div>
@@ -16,7 +16,7 @@
 
            <div class="nav-item collapse-li">
             <div (click)="flag1 = !flag1" class="nav-link" data-toggle="collapse" aria-expanded="false">
-              <span>Style   </span>    <i class="fa fa-chevron-down pull-right"></i> </div>
+              <span>Style   </span>    <i class="fa pull-right" [ngClass]="(flag1) ? 'fa-chevron-up' : 'fa-chevron-down'"></i> </div>
               <div *ngIf="flag1" class="child-nav-items">
                 <div [routerLink] = "['/colors']" routerLinkActive="nav-item-active"> Colors </div>
                 <div [routerLink] = "['/grid']" routerLinkActive="nav-item-active"> Grid </div>
@@ -27,7 +27,7 @@
 
           <div class="nav-item collapse-li">
             <div (click)="flag2 = !flag2" class="nav-link" data-toggle="collapse" aria-expanded="false">
-              <span> Components</span>  <i class="fa fa-chevron-down pull-right"></i>  </div>
+              <span> Components</span>  <i class="fa pull-right" [ngClass]="(flag2) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>  </div>
               <div *ngIf="flag2" class="child-nav-items">
                 <div> Overview </div>
                 <div> Accordion </div>
