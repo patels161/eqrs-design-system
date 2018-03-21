@@ -4,7 +4,7 @@
       <div class="sidebar-sticky">
         <div class="nav flex-column">
           <div class="nav-item collapse-li">
-            <div (click)="isMenuOpen = !isMenuOpen; isMenu1Open = isMenu1Open; isMenu2Open = isMenu2Open" class="nav-link" data-toggle="collapse" aria-expanded="false">
+            <div (click)="isMenuOpen = !isMenuOpen; isMenu1Open = false; isMenu2Open = false" class="nav-link" data-toggle="collapse" aria-expanded="false">
               <span> Getting started</span> <i class="fa pull-right" [ngClass]="(isMenuOpen) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>  </div>
               <div *ngIf="isMenuOpen" class="child-nav-items">
                 <div> Principles </div>
