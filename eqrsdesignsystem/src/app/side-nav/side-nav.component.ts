@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavComponent implements OnInit {
 
-  flag: boolean=false; 
-  flag1: boolean=false;
-  flag2: boolean=false;
+  isMenuOpen: boolean=false;
+  isMenu1Open: boolean=false;
+  isMenu2Open: boolean=false;
 
   constructor() { }
 

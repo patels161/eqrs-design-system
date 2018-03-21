@@ -4,9 +4,9 @@
       <div class="sidebar-sticky">
         <div class="nav flex-column">
           <div class="nav-item collapse-li">
-            <div (click)="flag = !flag" class="nav-link" data-toggle="collapse" aria-expanded="false">
-              <span> Getting started</span>  <i class="fa pull-right" [ngClass]="(flag) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>  </div>
-              <div *ngIf="flag" class="child-nav-items">
+            <div (click)="isMenuOpen = !isMenuOpen; isMenu1Open = isMenu1Open; isMenu2Open = isMenu2Open" class="nav-link" data-toggle="collapse" aria-expanded="false">
+              <span> Getting started</span> <i class="fa pull-right" [ngClass]="(isMenuOpen) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>  </div>
+              <div *ngIf="isMenuOpen" class="child-nav-items">
                 <div> Principles </div>
                 <div> Guidelines </div>
                 <div> Accessibility </div>
@@ -15,9 +15,9 @@
           </div>
 
            <div class="nav-item collapse-li">
-            <div (click)="flag1 = !flag1" class="nav-link" data-toggle="collapse" aria-expanded="false">
-              <span>Style   </span>    <i class="fa pull-right" [ngClass]="(flag1) ? 'fa-chevron-up' : 'fa-chevron-down'"></i> </div>
-              <div *ngIf="flag1" class="child-nav-items">
+            <div (click)="isMenu1Open = !isMenu1Open; isMenuOpen = false; isMenu2Open = false" class="nav-link" data-toggle="collapse" aria-expanded="false">
+              <span>Style </span> <i class="fa pull-right" [ngClass]="(isMenu1Open) ? 'fa-chevron-up' : 'fa-chevron-down'"></i> </div>
+              <div *ngIf="isMenu1Open" class="child-nav-items">
                 <div [routerLink] = "['/colors']" routerLinkActive="nav-item-active"> Colors </div>
                 <div [routerLink] = "['/grid']" routerLinkActive="nav-item-active"> Grid </div>
                 <div [routerLink] = "['/iconography']" routerLinkActive="nav-item-active"> Iconography </div>
@@ -26,9 +26,9 @@
           </div>
 
           <div class="nav-item collapse-li">
-            <div (click)="flag2 = !flag2" class="nav-link" data-toggle="collapse" aria-expanded="false">
-              <span> Components</span>  <i class="fa pull-right" [ngClass]="(flag2) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>  </div>
-              <div *ngIf="flag2" class="child-nav-items">
+            <div (click)="isMenu2Open = !isMenu2Open; isMenuOpen = false; isMenu1Open = false" class="nav-link" data-toggle="collapse" aria-expanded="false">
+              <span> Components</span>  <i class="fa pull-right" [ngClass]="(isMenu2Open) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>  </div>
+              <div *ngIf="isMenu2Open" class="child-nav-items">
                 <div> Overview </div>
                 <div> Accordion </div>
                 <div> Alerts </div>
