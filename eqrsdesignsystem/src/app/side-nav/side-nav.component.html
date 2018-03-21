@@ -5,48 +5,36 @@
         <div class="nav flex-column">
           <div class="nav-item collapse-li">
             <div (click)="isMenuOpen = !isMenuOpen; isMenu1Open = false; isMenu2Open = false" class="nav-link" data-toggle="collapse" aria-expanded="false">
-              <span> Getting started</span> <i class="fa pull-right" [ngClass]="(isMenuOpen) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>  </div>
-              <div *ngIf="isMenuOpen" class="child-nav-items">
-                <div [routerLink] = "['/principles']" routerLinkActive="nav-item-active"> Principles </div>
-                <div [routerLink] = "['/guidelines']" routerLinkActive="nav-item-active"> Guidelines </div>
-                <div [routerLink] = "['/accessibility']" routerLinkActive="nav-item-active"> Accessibility </div>
-                <div [routerLink] = "['/responsivedesign']" routerLinkActive="nav-item-active"> Responsive design </div>
+              <span> Getting started</span> <i class="fa pull-right" [ngClass]="(isMenuOpen) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+            </div>
+            <div *ngIf="isMenuOpen">
+              <div *ngFor="let menuItem of menuItems[0]" class="child-nav-items">
+                <div [routerLink] = "[menuItem.path]" routerLinkActive="nav-item-active"> {{menuItem.title}} </div>
               </div>
+            </div>
           </div>
 
            <div class="nav-item collapse-li">
             <div (click)="isMenu1Open = !isMenu1Open; isMenuOpen = false; isMenu2Open = false" class="nav-link" data-toggle="collapse" aria-expanded="false">
-              <span>Style </span> <i class="fa pull-right" [ngClass]="(isMenu1Open) ? 'fa-chevron-up' : 'fa-chevron-down'"></i> </div>
-              <div *ngIf="isMenu1Open" class="child-nav-items">
-                <div [routerLink] = "['/colors']" routerLinkActive="nav-item-active"> Colors </div>
-                <div [routerLink] = "['/grid']" routerLinkActive="nav-item-active"> Grid </div>
-                <div [routerLink] = "['/iconography']" routerLinkActive="nav-item-active"> Iconography </div>
-                <div [routerLink] = "['/typography']" routerLinkActive="nav-item-active"> Typography </div>
-              </div>
+              <span>Style </span> <i class="fa pull-right" [ngClass]="(isMenu1Open) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+            </div>
+             <div *ngIf="isMenu1Open">
+               <div *ngFor="let menuItem of menuItems[1]" class="child-nav-items">
+                  <div [routerLink] = "[menuItem.path]" routerLinkActive="nav-item-active"> {{menuItem.title}} </div>
+               </div>
+             </div>
           </div>
 
           <div class="nav-item collapse-li">
             <div (click)="isMenu2Open = !isMenu2Open; isMenuOpen = false; isMenu1Open = false" class="nav-link" data-toggle="collapse" aria-expanded="false">
-              <span> Components</span>  <i class="fa pull-right" [ngClass]="(isMenu2Open) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>  </div>
-              <div *ngIf="isMenu2Open" class="child-nav-items">
-                <div> Overview </div>
-                <div> Accordion </div>
-                <div> Alerts </div>
-                <div> Buttons </div>
-                <div> Checkbox </div>
-                <div> Data table </div>
-                <div> Dropdown </div>
-                <div> Inputs </div>
-                <div> Labels </div>
-                <div> Modal </div>
-                <div> Progress indicator </div>
-                <div> Radio button </div>
-                <div> Search </div>
-                <div> Tooltips </div>
+              <span> Components</span>  <i class="fa pull-right" [ngClass]="(isMenu2Open) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+            </div>
+            <div *ngIf="isMenu2Open">
+              <div *ngFor="let menuItem of menuItems[2]" class="child-nav-items">
+                <div [routerLink] = "[menuItem.path]" routerLinkActive="nav-item-active"> {{menuItem.title}} </div>
               </div>
+            </div>
           </div>
-
-
         </div>
       </div>
 </nav>

@@ -11,6 +11,8 @@ import { ComponentsComponent } from './main-content/components/components.compon
 import {StyleModule} from "./main-content/style/style.module";
 import {GettingStartedModule} from "./main-content/getting-started/getting-started.module";
 import {routing} from "./app-routing.module";
+import {MenuItemsService} from "../services/menu-items.service";
+import {HttpClient, HttpClientModule, HttpHandler} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -23,13 +25,14 @@ import {routing} from "./app-routing.module";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     MatTabsModule,
     BrowserAnimationsModule,
     StyleModule,
     GettingStartedModule,
     routing
 ],
-  providers: [],
+  providers: [ HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

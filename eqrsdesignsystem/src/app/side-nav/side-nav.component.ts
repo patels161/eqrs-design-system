@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItemsService} from "../../services/menu-items.service";
+import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 
 @Component({
   selector: 'app-side-nav',
@@ -10,10 +12,18 @@ export class SideNavComponent implements OnInit {
   isMenuOpen: boolean=false;
   isMenu1Open: boolean=false;
   isMenu2Open: boolean=false;
+  menuItems: any;
 
-  constructor() { }
+  constructor( private http: HttpClient ) { }
 
   ngOnInit() {
+    this.http.get('assets/data/menu-items.json').subscribe(
+      data => {
+        this.menuItems = data as string [];
+      },
+      (err: HttpErrorResponse) => {
+        console.log (err.message);
+      }
+    );
   }
-
 }
