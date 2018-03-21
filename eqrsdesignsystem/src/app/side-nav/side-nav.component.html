@@ -7,10 +7,10 @@
             <div (click)="isMenuOpen = !isMenuOpen; isMenu1Open = false; isMenu2Open = false" class="nav-link" data-toggle="collapse" aria-expanded="false">
               <span> Getting started</span> <i class="fa pull-right" [ngClass]="(isMenuOpen) ? 'fa-chevron-up' : 'fa-chevron-down'"></i>  </div>
               <div *ngIf="isMenuOpen" class="child-nav-items">
-                <div> Principles </div>
-                <div> Guidelines </div>
-                <div> Accessibility </div>
-                <div> Responsive design </div>
+                <div [routerLink] = "['/principles']" routerLinkActive="nav-item-active"> Principles </div>
+                <div [routerLink] = "['/guidelines']" routerLinkActive="nav-item-active"> Guidelines </div>
+                <div [routerLink] = "['/accessibility']" routerLinkActive="nav-item-active"> Accessibility </div>
+                <div [routerLink] = "['/responsivedesign']" routerLinkActive="nav-item-active"> Responsive design </div>
               </div>
           </div>
 
