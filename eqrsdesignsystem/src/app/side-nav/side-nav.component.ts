@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItemsService} from "../../services/menu-items.service";
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 
 @Component({

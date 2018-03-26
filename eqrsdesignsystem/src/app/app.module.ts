@@ -11,8 +11,8 @@ import { ComponentsComponent } from './main-content/components/components.compon
 import {StyleModule} from "./main-content/style/style.module";
 import {GettingStartedModule} from "./main-content/getting-started/getting-started.module";
 import {routing} from "./app-routing.module";
-import {MenuItemsService} from "../services/menu-items.service";
-import {HttpClient, HttpClientModule, HttpHandler} from "@angular/common/http";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {ComponentsModule} from "./main-content/components/components.module";
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import {HttpClient, HttpClientModule, HttpHandler} from "@angular/common/http";
     BrowserAnimationsModule,
     StyleModule,
     GettingStartedModule,
+    ComponentsModule,
     routing
 ],
   providers: [ HttpClient],
