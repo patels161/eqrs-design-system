@@ -1,2 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+h1, h2, h3, h4, h5 {
+    font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    margin-bottom: .5rem;
+    line-height: 1.3rem;
+    font-weight: 700;
+}
+
+.row-no-flex {
+	display: inline;
+}
+
+.eqrs-label-bold {
+    font-weight: 700;
+}
+
+h4 {
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    color: #323a45;
+    padding-top: 15px;
+}
+
+.row-previous-next {
+    background: #f1f1f1;
+    padding: 1rem;
+    width: 70%;
+}
+
+.row-previous-next span {
+    color: #0071bc;
+    cursor: pointer;
+}
+
+
