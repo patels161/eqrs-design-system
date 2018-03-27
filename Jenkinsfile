@@ -11,7 +11,7 @@ node {
 	
 	stage "Build and push docker image"
 	dir("${env.HUDSON_HOME}/workspace/${env.JOB_NAME}"){
-		appImage = docker.build('eqrs-design-system:latest', './')
+		appImage = docker.build('eqrs-design-system:latest', '-f ./Docker/Dockerfile ./')
 	}
 	docker.withRegistry('vqnpap119.hcqis.org:5000'){
 		appImage.push()
