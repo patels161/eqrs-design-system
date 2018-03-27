@@ -13,7 +13,7 @@ node {
 	dir("${env.HUDSON_HOME}/workspace/${env.JOB_NAME}"){
 		appImage = docker.build('eqrs-design-system:latest', '-f ./Docker/Dockerfile ./')
 	}
-	docker.withRegistry('http://vqnpap119.hcqis.org:5000'){
+	docker.withRegistry('http://vqnpap119-mgt.hcqis.org:5000'){
 		appImage.push()
 	}
 	
