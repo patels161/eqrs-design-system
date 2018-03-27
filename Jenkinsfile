@@ -1,4 +1,5 @@
 node {
+	def appImage
 	stage "Checkout code"
 	checkout scm
 	
@@ -8,9 +9,17 @@ node {
 		sh 'ng build'
 	}
 	
-	stage "Build docker image"
+	stage "Build and push docker image"
 	dir("${env.HUDSON_HOME}/workspace/${env.JOB_NAME}"){
-		docker.build('eqrs-design-system:latest', './Docker/')
-		
+		appImage = docker.build('eqrs-design-system:latest', './')
 	}
+	docker.withRegistry('vqnpap119.hcqis.org:5000'){
+		appImage.push()
+	}
+	
+	stage "Run docker container"
+	docker.withServer('vqnpap121.hcqis.org:2375'){
+		appImage.run('-p 9999:80 --rm --name eqrs-design-system')
+	}
+	
 }
