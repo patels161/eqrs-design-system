@@ -9,18 +9,16 @@ node {
 		sh 'ng build'
 	}
 	
-	stage "Build and push docker image"
+	stage "Build, push, and run docker image"
 	dir("${env.HUDSON_HOME}/workspace/${env.JOB_NAME}"){
-		appImage = docker.build('eqrs-design-system:latest', '-f ./Docker/Dockerfile ./')
-	}
-	docker.withRegistry('http://vqnpap119-mgt.hcqis.org:5000'){
-		appImage.push()
-	}
-	
-	stage "Run docker container"
-	docker.withRegistry('http://vqnpap119-mgt.hcqis.org:5000'){
-		docker.withServer('vqnpap121.hcqis.org:2375'){
-			appImage.run('-p 9999:80 --rm --name eqrs-design-system')
+		docker.withRegistry('http://vqnpap119-mgt.hcqis.org:5000'){
+			appImage = docker.build('eqrs-design-system:latest', '-f ./Docker/Dockerfile ./')
+			appImage.push()
+			docker.withServer('vqnpap121.hcqis.org:2375'){
+				appImage.run('-p 9999:80 --rm --name eqrs-design-system')
+			}
 		}
+		
 	}
+
 }
