@@ -10,7 +10,7 @@ node {
 	
 	stage "Build docker image"
 	dir("${env.HUDSON_HOME}/workspace/${env.JOB_NAME}/Docker"){
-		docker.build(eqrs-design-system:latest)
+		docker.build('eqrs-design-system:latest')
 		
 	}
 }
