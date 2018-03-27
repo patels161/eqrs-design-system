@@ -11,13 +11,13 @@ node {
 	
 	stage "Build, push, and run docker image"
 	dir("${env.HUDSON_HOME}/workspace/${env.JOB_NAME}"){
-		docker.withRegistry('http://vqnpap119-mgt.hcqis.org:5000'){
-			appImage = docker.build('eqrs-design-system:latest', '-f ./Docker/Dockerfile ./')
-			appImage.push()
-			docker.withServer('vqnpap121.hcqis.org:2375'){
-				appImage.run('-p 9999:80 --rm --name eqrs-design-system')
-			}
+
+		appImage = docker.build('vqnpap119-mgt.hcqis.org:5000/eqrs-design-system:latest', '-f ./Docker/Dockerfile ./')
+		appImage.push()
+		docker.withServer('vqnpap121.hcqis.org:2375'){
+			appImage.run('-p 9999:80 --rm --name eqrs-design-system')
 		}
+		
 		
 	}
 
