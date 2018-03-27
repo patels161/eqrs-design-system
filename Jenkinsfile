@@ -18,8 +18,9 @@ node {
 	}
 	
 	stage "Run docker container"
-	docker.withServer('vqnpap121.hcqis.org:2375'){
-		appImage.run('-p 9999:80 --rm --name eqrs-design-system')
+	docker.withRegistry('http://vqnpap119-mgt.hcqis.org:5000'){
+		docker.withServer('vqnpap121.hcqis.org:2375'){
+			appImage.run('-p 9999:80 --rm --name eqrs-design-system')
+		}
 	}
-	
 }
