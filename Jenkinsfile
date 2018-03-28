@@ -14,7 +14,7 @@ node {
 
 		appImage = docker.build('vqnpap119-mgt.hcqis.org:5000/eqrs-design-system:latest', '-f ./Docker/Dockerfile ./')
 		appImage.push()
-		docker.withServer('vqnpap121.hcqis.org:2375'){
+		docker.withServer('vqndwb17.hcqis.org:2375'){
 			appImage.run('-p 9999:80 --rm --name eqrs-design-system')
 		}
 		
