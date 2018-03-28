@@ -14,7 +14,14 @@ node {
 
 		appImage = docker.build('vqnpap119-mgt.hcqis.org:5000/eqrs-design-system:latest', '-f ./Docker/Dockerfile ./')
 		appImage.push()
-		docker.withServer('vqnpap121.hcqis.org:2375'){
+		docker.withServer('vqndwb17.hcqis.org:2375'){
+			try{
+				sh 'docker rm eqrs-design-system'
+			}
+			catch(Exception e){
+				echo 'Container not found. Proceeding to deploy new image.'
+			}
+			
 			appImage.run('-p 9999:80 --rm --name eqrs-design-system')
 		}
 		
