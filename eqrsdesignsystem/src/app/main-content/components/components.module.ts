@@ -14,11 +14,13 @@ import {ProgressIndicatorComponent} from "./progress-indicator/progress-indicato
 import {RadioButtonComponent} from "./radio-button/radio-button.component";
 import {SearchComponent} from "./search/search.component";
 import {PrismModule} from "@ngx-prism/core";
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   imports: [
     ComponentsRouting,
-    PrismModule
+    PrismModule,
+    CommonModule
   ],
   declarations: [
     AccordionComponent,
@@ -33,7 +35,7 @@ import {PrismModule} from "@ngx-prism/core";
     OverviewComponent,
     ProgressIndicatorComponent,
     RadioButtonComponent,
-    SearchComponent 
+    SearchComponent
   ]
 })
 export class ComponentsModule { }

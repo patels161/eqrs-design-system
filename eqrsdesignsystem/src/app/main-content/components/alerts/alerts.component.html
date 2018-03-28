@@ -15,13 +15,15 @@
 
       </div>
 
-        <div class="col-md-12 code-block"> 
+        <div class="col-md-12 code-block">
           <div>
-          <button class="btn code-button"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
-        </div>
-          <ngx-prism [language]="cssLanguage">
+          <button class="btn code-button" (click) = "visibility = !visibility"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+          <div *ngIf="visibility">
+            <ngx-prism [language]="cssLanguage">
              {{cssContent}}
-          </ngx-prism>
+            </ngx-prism>
+          </div>
+         </div>
         </div>
 
     </div>  <!-- row ends here -->
@@ -95,4 +97,3 @@
 
 
 
-     

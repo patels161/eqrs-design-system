@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alerts.component.css']
 })
 export class AlertsComponent implements OnInit {
+  visibility: boolean = false;
+  show: boolean = true;
   htmlLanguage = 'html';
   cssLanguage = 'css';
-  cssContent =           
+  cssContent =
       '<div class="eqrs-alert-success  col-md-12">\n' +
         '<div class="eqrs-alert-body">\n' +
             '<h4 class="eqrs-alert-heading">Success status</h4>\n' +
