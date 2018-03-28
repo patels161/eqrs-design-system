@@ -16,6 +16,7 @@ node {
 		appImage.push()
 		docker.withServer('vqndwb17.hcqis.org:2375'){
 			try{
+			    sh 'docker stop eqrs-design-system'
 				sh 'docker rm eqrs-design-system'
 			}
 			catch(Exception e){
