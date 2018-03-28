@@ -6,26 +6,29 @@
 
 
 <!-- SUCCESS STATUS -->
-<div class="row">
+<div class="row m-0">
         <div class="eqrs-alert-success  col-md-12 mb-0">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Success status</h4>
             <p>Displays when database change is successful.</p>
           </div>
-          <button class="btn pull-right"> Code <i class="fa fa-code" aria-hidden="true"></i> </button>
-        </div>
+
+      </div>
 
         <div class="col-md-12 code-block"> 
-          html code here to copy <br>
-          html code here to copy <br>
-          html code here to copy
+          <div>
+          <button class="btn code-button"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+        </div>
+          <ngx-prism [language]="cssLanguage">
+             {{cssContent}}
+          </ngx-prism>
         </div>
 
     </div>  <!-- row ends here -->
 
 
 <!-- WARNING STATUS -->
-    <div class="row">
+    <div class="row m-0">
         <div class="eqrs-alert-warning  col-md-12">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Warning status</h4>
@@ -37,7 +40,7 @@
 
 
 <!-- ERROR STATUS -->
-<div class="row">
+<div class="row m-0">
         <div class="eqrs-alert-error col-md-12" role="alert">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Error status</h4>
@@ -48,7 +51,7 @@
 
 
 <!-- ERROR MULTI-LINE STATUS -->
-<div class="row">
+<div class="row m-0">
         <div class="eqrs-alert-error  col-md-12">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Error multi-line</h4>
@@ -63,7 +66,7 @@
       </div>    <!-- row ends here -->
 
   <!-- ERROR SINGLE-LINE STATUS -->
-<div class="row">
+<div class="row m-0">
         <div class="eqrs-alert-error  col-md-12">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Error single line</h4>
@@ -77,7 +80,7 @@
 
 
 <!-- INFORMATION STATUS -->
-<div class="row">
+<div class="row m-0">
         <div class="eqrs-alert-information  col-md-12">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Information status</h4>

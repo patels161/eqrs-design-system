@@ -60,7 +60,13 @@
 .code-block {
     margin: 0;
     padding-top: 0;
-    background: #f1f1f1;
+    background: #fff;
+}
+
+.btn.code-button {
+    color: #112e51;
+    text-decoration: underline;
+    padding: 0;
 }
 
 

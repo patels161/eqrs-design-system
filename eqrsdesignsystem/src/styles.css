@@ -2,13 +2,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import "~prismjs/plugins/toolbar/prism-toolbar.css";
 @import "~prismjs/themes/prism.css";
-@import "~prismjs/themes/prism-okaidia.css";
 @import '~prismjs/themes/prism-coy.css';
-@import '~prismjs/themes/prism-dark.css';
-@import '~prismjs/themes/prism-funky.css';
-@import '~prismjs/themes/prism-solarizedlight.css';
-@import '~prismjs/themes/prism-tomorrow.css';
-@import '~prismjs/themes/prism-twilight.css';
 
 h1, h2, h3, h4, h5 {
     font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
@@ -49,5 +43,26 @@ h4 {
     color: #0071bc;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
