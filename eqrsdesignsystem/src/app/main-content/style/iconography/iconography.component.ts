@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./iconography.component.css']
 })
 export class IconographyComponent implements OnInit {
-  language = 'html';
-  content = '<p>test</p>';
+  htmlLanguage = 'html';
+  cssLanguage = 'css';
+  htmlContent = '<p>test</p>';
+  cssContent = ' <h4 class="eqrs-alert-heading">Success status</h4>';
   constructor() { }
 
   ngOnInit() {
