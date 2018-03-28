@@ -13,6 +13,7 @@ import {GettingStartedModule} from "./main-content/getting-started/getting-start
 import {routing} from "./app-routing.module";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {ComponentsModule} from "./main-content/components/components.module";
+import { PrismModule } from '@ngx-prism/core';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {ComponentsModule} from "./main-content/components/components.module";
     StyleModule,
     GettingStartedModule,
     ComponentsModule,
+    PrismModule,
     routing
 ],
   providers: [ HttpClient],

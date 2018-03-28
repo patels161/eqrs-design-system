@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./iconography.component.css']
 })
 export class IconographyComponent implements OnInit {
-
+  language = 'html';
+  content = '<p>test</p>';
   constructor() { }
 
   ngOnInit() {
