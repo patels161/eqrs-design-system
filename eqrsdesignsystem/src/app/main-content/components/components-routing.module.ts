@@ -13,6 +13,7 @@ import {OverviewComponent} from "./overview/overview.component";
 import {ProgressIndicatorComponent} from "./progress-indicator/progress-indicator.component";
 import {RadioButtonComponent} from "./radio-button/radio-button.component";
 import {SearchComponent} from "./search/search.component";
+import {TooltipsComponent} from "./tooltips/tooltips.component";
 
 const componentsRoutes: Routes = [
   { path: '', redirectTo: '',  pathMatch: 'full'},
@@ -29,6 +30,7 @@ const componentsRoutes: Routes = [
   { path: 'progressindicator', component: ProgressIndicatorComponent},
   { path: 'radiobutton', component: RadioButtonComponent},
   { path: 'search', component: SearchComponent},
+  { path: 'tooltips', component: TooltipsComponent}
 
 ];
 export const ComponentsRoutingProviders: any[] = [];
