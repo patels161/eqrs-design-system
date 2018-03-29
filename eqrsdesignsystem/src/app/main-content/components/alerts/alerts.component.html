@@ -6,18 +6,18 @@
 
 
 <!-- SUCCESS STATUS -->
-<div class="row m-0">
+<div class="card col-md-9">
+  <div class="card-body">
         <div class="eqrs-alert-success  col-md-12 mb-0">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Success status</h4>
             <p>Displays when database change is successful.</p>
           </div>
-
       </div>
 
         <div class="col-md-12 code-block">
           <div>
-          <button class="btn code-button" (click) = "visibility = !visibility"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+          <button class="btn code-button mt-2" (click) = "visibility = !visibility"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
           <div *ngIf="visibility">
             <ngx-prism [language]="cssLanguage">
              {{cssContent}}
@@ -26,11 +26,13 @@
          </div>
         </div>
 
-    </div>  <!-- row ends here -->
+  </div>
+</div>  <!-- card ends here -->
 
 
 <!-- WARNING STATUS -->
-    <div class="row m-0">
+    <div class="card col-md-9 mt-5">
+  <div class="card-body">
         <div class="eqrs-alert-warning  col-md-12">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Warning status</h4>
@@ -38,22 +40,37 @@
           </div>
         </div>
 
-    </div> <!-- row ends here -->
+        <div class="col-md-12 code-block">
+          <div>
+          <button class="btn code-button mt-2" (click) = "visibility = !visibility"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+          <div *ngIf="visibility">
+            <ngx-prism [language]="cssLanguage2">
+             {{cssContent2}}
+            </ngx-prism>
+          </div>
+         </div>
+        </div>
+
+    </div> 
+  </div>  <!-- card ends here -->
 
 
 <!-- ERROR STATUS -->
-<div class="row m-0">
+<div class="card col-md-9 mt-5">
+  <div class="card-body">
         <div class="eqrs-alert-error col-md-12" role="alert">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Error status</h4>
             <p>Displays when database change fails. User action needed in order to save.</p>
           </div>
         </div>
-      </div> <!-- row ends here -->
+      </div>
+      </div> <!-- card ends here -->
 
 
 <!-- ERROR MULTI-LINE STATUS -->
-<div class="row m-0">
+<div class="card col-md-9 mt-5">
+  <div class="card-body">
         <div class="eqrs-alert-error  col-md-12">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Error multi-line</h4>
@@ -65,10 +82,13 @@
               <ul>
           </ul></ul></div>
         </div>
-      </div>    <!-- row ends here -->
+      </div>
+      </div>    <!-- card ends here -->
+
 
   <!-- ERROR SINGLE-LINE STATUS -->
-<div class="row m-0">
+<div class="card col-md-9 mt-5">
+  <div class="card-body">
         <div class="eqrs-alert-error  col-md-12">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Error single line</h4>
@@ -78,18 +98,21 @@
               <ul>
           </ul></ul></div>
         </div>
-      </div>  <!-- row ends here -->
+      </div>
+      </div>  <!-- card ends here -->
 
 
 <!-- INFORMATION STATUS -->
-<div class="row m-0">
+<div class="card col-md-9 mt-5">
+  <div class="card-body">
         <div class="eqrs-alert-information  col-md-12">
           <div class="eqrs-alert-body">
             <h4 class="eqrs-alert-heading">Information status</h4>
             <p>Displays when feedback should be provided to the user. No user action needed.</p>
           </div>
         </div>
-      </div>  <!-- row ends here -->
+      </div>
+      </div>  <!-- card ends here -->
 
 
 
