@@ -153,7 +153,7 @@
           <button class="btn code-button mt-2" (click) = "informationShow = !informationShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
           <div *ngIf="informationShow">
             <ngx-prism [language]="cssLanguage">
-             {{informationstStatusContent}}
+             {{informationStatusContent}}
             </ngx-prism>
           </div>
          </div>
@@ -164,13 +164,13 @@
 
 
 
-  
+
 <!-- PREVIOUS NEXT -->
 
 <div class="row row-previous-next ml-0 mt-5">
   <div class="col-lg-12">
-    <span> <i class="fa fa-chevron-left"></i> Previous: <b>Responsive design</b> </span>
-    <span class="pull-right"> Next: <b>Grid</b> <i class="fa fa-chevron-right"></i> </span>
+    <span [routerLink] = "['/accordion']"> <i class="fa fa-chevron-left"></i> Previous: <b>Accordion</b> </span>
+    <span [routerLink] = "['/buttons']" class="pull-right"> Next: <b>Buttons</b> <i class="fa fa-chevron-right"></i> </span>
   </div>
 </div>
 
