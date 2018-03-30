@@ -4,7 +4,9 @@
 <p> Use descriptive words that clearly state the action of the button, avoiding vague wording like <i>yes</i> or <i>no</i>. </p>
 
 <h4>Primary button</h4>
-<div class="row">
+<div class="card">
+  <div class="card-body">
+  	<div class="row">
     <div class="col-md-2">
       <p>Default</p>
       <button class="eqrs-button-primary">Submit</button>
@@ -18,7 +20,21 @@
       <p>Active</p>
       <button class="eqrs-button-primary primary-active">Submit</button>
     </div>
+</div> <!-- row ends here -->
+
+     <div class="col-md-12 code-block">
+          <div>
+          <button class="btn code-button mt-2" (click) = "successShow = !successShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+          <div *ngIf="successShow">
+            <ngx-prism [language]="cssLanguage">
+             {{successStatusContent}}
+            </ngx-prism>
+          </div>
+         </div>
+        </div>
+
   </div>
+</div>  <!-- card ends here -->
 
 
 

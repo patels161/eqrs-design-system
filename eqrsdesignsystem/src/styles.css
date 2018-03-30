@@ -209,6 +209,11 @@ h4 {
     border-radius: 3px;
 }
 
+.btn.code-button {
+    color: #112e51;
+    text-decoration: underline;
+    padding: 0;
+}
 
 
 
