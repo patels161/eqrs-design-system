@@ -15,6 +15,7 @@ import {RadioButtonComponent} from "./radio-button/radio-button.component";
 import {SearchComponent} from "./search/search.component";
 import {PrismModule} from "@ngx-prism/core";
 import { CommonModule } from '@angular/common';
+import { TooltipsComponent } from './tooltips/tooltips.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { CommonModule } from '@angular/common';
     OverviewComponent,
     ProgressIndicatorComponent,
     RadioButtonComponent,
-    SearchComponent
+    SearchComponent,
+    TooltipsComponent
   ]
 })
 export class ComponentsModule { }
