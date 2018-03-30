@@ -6,10 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./buttons.component.css']
 })
 export class ButtonsComponent implements OnInit {
+  cssLanguage = 'css';
+  primaryButtonShow: boolean = false;
+  primaryButtonContent: any;
+  secondaryButtonShow: boolean = false;
+  secondaryButtonContent: any;
+  accentButtonShow: boolean = false;
+  accentButtonContent: any;
+  destructiveButtonShow: boolean = false;
+  destructiveButtonContent: any;
+  disabledButtonShow: boolean = false;
+  disabledButtonContent: any;
 
   constructor() { }
 
   ngOnInit() {
+    this.primaryButtonContent = '<div class="eqrs-alert-success  col-md-12">\n' +
+      '               <div class="eqrs-alert-body">\n' +
+      '                 <h4>Primary buttons</h4>\n' +
+      '               </div>\n' +
+      '             </div>';
+    this.secondaryButtonContent = '';
+    this.accentButtonContent = '';
+    this.destructiveButtonContent = '';
+    this.disabledButtonContent = '';
   }
 
 }

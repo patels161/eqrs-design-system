@@ -24,10 +24,10 @@
 
      <div class="col-md-12 code-block">
           <div>
-          <button class="btn code-button mt-2" (click) = "successShow = !successShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
-          <div *ngIf="successShow">
+          <button class="btn code-button mt-2" (click) = "primaryButtonShow = !primaryButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+          <div *ngIf="primaryButtonShow">
             <ngx-prism [language]="cssLanguage">
-             {{successStatusContent}}
+             {{primaryButtonContent}}
             </ngx-prism>
           </div>
          </div>
