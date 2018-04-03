@@ -15,9 +15,10 @@
           </div>
       </div>
 
+<button class="btn code-button mt-3 pull-right" (click) = "successShow = !successShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+
         <div class="col-md-12 code-block">
           <div>
-          <button class="btn code-button mt-2" (click) = "successShow = !successShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
           <div *ngIf="successShow">
             <ngx-prism [language]="cssLanguage">
              {{successStatusContent}}
@@ -40,9 +41,10 @@
           </div>
         </div>
 
+        <button class="btn code-button mt-2 pull-right" (click) = "warningShow = !warningShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+
         <div class="col-md-12 code-block">
           <div>
-          <button class="btn code-button mt-2" (click) = "warningShow = !warningShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
           <div *ngIf="warningShow">
             <ngx-prism [language]="cssLanguage">
              {{warningStatusContent}}
@@ -65,9 +67,10 @@
           </div>
         </div>
 
+<button class="btn code-button mt-2 pull-right" (click) = "errorShow = !errorShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+
     <div class="col-md-12 code-block">
           <div>
-          <button class="btn code-button mt-2" (click) = "errorShow = !errorShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
           <div *ngIf="errorShow">
             <ngx-prism [language]="cssLanguage">
              {{errorStatusContent}}
@@ -95,9 +98,10 @@
           </ul></ul></div>
         </div>
 
+<button class="btn code-button mt-2 pull-right" (click) = "errorMultilineShow = !errorMultilineShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+
         <div class="col-md-12 code-block">
           <div>
-          <button class="btn code-button mt-2" (click) = "errorMultilineShow = !errorMultilineShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
           <div *ngIf="errorMultilineShow">
             <ngx-prism [language]="cssLanguage">
              {{errorMultilineContent}}
@@ -123,9 +127,10 @@
             </div>
         </div>
 
+<button class="btn code-button mt-2 pull-right" (click) = "errorSinglelineShow = !errorSinglelineShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+
        <div class="col-md-12 code-block">
           <div>
-          <button class="btn code-button mt-2" (click) = "errorSinglelineShow = !errorSinglelineShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
           <div *ngIf="errorSinglelineShow">
             <ngx-prism [language]="cssLanguage">
              {{errorSinglelineContent}}
@@ -148,9 +153,10 @@
           </div>
         </div>
 
+<button class="btn code-button mt-2 pull-right" (click) = "informationShow = !informationShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+
        <div class="col-md-12 code-block">
           <div>
-          <button class="btn code-button mt-2" (click) = "informationShow = !informationShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
           <div *ngIf="informationShow">
             <ngx-prism [language]="cssLanguage">
              {{informationStatusContent}}

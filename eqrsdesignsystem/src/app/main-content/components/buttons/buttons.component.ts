@@ -17,6 +17,12 @@ export class ButtonsComponent implements OnInit {
   destructiveButtonContent: any;
   disabledButtonShow: boolean = false;
   disabledButtonContent: any;
+  exlayout1ButtonShow: boolean = false;
+  exlayout1ButtonContent: any;
+  exlayout2ButtonShow: boolean = false;
+  exlayout2ButtonContent: any;
+  buttonlinksButtonShow: boolean = false;
+  buttonlinksButtonContent: any;
 
   constructor() { }
 
@@ -30,6 +36,9 @@ export class ButtonsComponent implements OnInit {
     this.accentButtonContent = '';
     this.destructiveButtonContent = '';
     this.disabledButtonContent = '';
+    this.exlayout1ButtonContent = '';
+    this.exlayout2ButtonContent = '';
+    this.buttonlinksButtonContent = '';
   }
 
 }

@@ -3,9 +3,10 @@
 
 <p> Use descriptive words that clearly state the action of the button, avoiding vague wording like <i>yes</i> or <i>no</i>. </p>
 
-<h4>Primary button</h4>
-<div class="card">
+
+<div class="card col-md-10">
   <div class="card-body">
+    <h4 class="pt-0 pb-3">Primary button</h4> 
   	<div class="row">
     <div class="col-md-2">
       <p>Default</p>
@@ -22,9 +23,11 @@
     </div>
 </div> <!-- row ends here -->
 
+
+<button class="btn code-button mt-2 pull-right" (click) = "primaryButtonShow = !primaryButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
+
      <div class="col-md-12 code-block">
           <div>
-          <button class="btn code-button mt-2" (click) = "primaryButtonShow = !primaryButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
           <div *ngIf="primaryButtonShow">
             <ngx-prism [language]="cssLanguage">
              {{primaryButtonContent}}
@@ -38,7 +41,9 @@
 
 
 
-  <h4>Secondary button</h4>
+  <div class="card col-md-10 mt-5">
+  <div class="card-body">
+    <h4 class="pt-0 pb-3">Secondary button</h4>
   <div class="row">
     <div class="col-md-2">
       <p>Default</p>
@@ -56,8 +61,26 @@
     </div>
   </div>
 
+<button class="btn code-button mt-2 pull-right" (click) = "secondaryButtonShow = !secondaryButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
 
-<h4>Accent button</h4>
+  <div class="col-md-12 code-block">
+          <div>
+          <div *ngIf="secondaryButtonShow">
+            <ngx-prism [language]="cssLanguage">
+             {{secondaryButtonContent}}
+            </ngx-prism>
+          </div>
+         </div>
+        </div>
+
+</div>
+</div>
+
+
+
+<div class="card col-md-10 mt-5">
+  <div class="card-body">
+    <h4 class="pt-0 pb-3">Accent button</h4>
 <div class="row">
     <div class="col-md-2">
       <p>Default</p>
@@ -74,8 +97,26 @@
     </div>
   </div>
 
+<button class="btn code-button mt-2 pull-right" (click) = "accentButtonShow = !accentButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
 
-  <h4>Destructive action (non-recoverable)</h4>
+<div class="col-md-12 code-block">
+          <div>
+          <div *ngIf="accentButtonShow">
+            <ngx-prism [language]="cssLanguage">
+             {{accentButtonContent}}
+            </ngx-prism>
+          </div>
+         </div>
+        </div>
+
+</div>
+</div>
+
+
+  
+  <div class="card col-md-10 mt-5">
+  <div class="card-body">
+    <h4 class="pt-0 pb-3">Destructive action (non-recoverable)</h4>
   <div class="row">
     <div class="col-md-2">
       <p>Default</p>
@@ -92,18 +133,50 @@
     </div>
   </div>
 
+  <button class="btn code-button mt-2 pull-right" (click) = "destructiveButtonShow = !destructiveButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
 
-  <h4>Disabled button</h4>
+<div class="col-md-12 code-block">
+          <div>
+          <div *ngIf="destructiveButtonShow">
+            <ngx-prism [language]="cssLanguage">
+             {{destructiveButtonContent}}
+            </ngx-prism>
+          </div>
+         </div>
+        </div>
+
+</div>
+</div>
+
+
+  
+  <div class="card col-md-10 mt-5">
+    <div class="card-body">
+      <h4 class="pt-0 pb-3">Disabled button</h4>
   <div>
-    <button class="eqrs-button-primary  col-xs-12 col-md-3 col-lg-2" disabled="">Disabled button</button>
+    <button class="eqrs-button-primary col-xs-12 col-md-3 col-lg-3" disabled="">Disabled button</button>
     <sup>*Note hover state</sup>
-    <!--<p class="notes">eqrs-button-disabled</p>
   </div>
-  <xmp class="notes">
-    HTML:
-    <button class="eqrs-button-primary" disabled</button>
-  </xmp>-->
-  <h4>Example layout 1</h4>
+
+<button class="btn code-button mt-2 pull-right" (click) = "disabledButtonShow = !disabledButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
+
+  <div class="col-md-12 code-block">
+          <div>
+          <div *ngIf="disabledButtonShow">
+            <ngx-prism [language]="cssLanguage">
+             {{disabledButtonContent}}
+            </ngx-prism>
+          </div>
+         </div>
+        </div>
+
+</div>
+</div>
+
+
+    <div class="card col-md-10 mt-5">
+    <div class="card-body">
+  <h4 class="pt-0 pb-3">Example layout 1</h4>
   <div class="row">
     <div class="col-12 col-sm-3 col-md-2 col-lg-2">
       <button class="eqrs-button-destructive">Delete</button>
@@ -123,10 +196,26 @@
   <div class="row">
     <p class="notes  offset-md-4">Place primary call to action to the right of other buttons and away from destructive wherever possible.</p>
   </div>
-  </div>
+ 
+ <button class="btn code-button mt-2 pull-right" (click) = "exlayout1ButtonShow = !exlayout1ButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
+
+<div class="col-md-12 code-block">
+          <div>
+          <div *ngIf="exlayout1ButtonShow">
+            <ngx-prism [language]="cssLanguage">
+             {{exlayout1ButtonContent}}
+            </ngx-prism>
+          </div>
+         </div>
+        </div>
+
+</div>
+</div>
 
 
-<h4>Example layout 2</h4>
+<div class="card col-md-10 mt-5">
+  <div class="card-body">
+<h4 class="pt-0 pb-3">Example layout 2</h4>
 <div class="row">
     <div class="col-12 col-sm-3 col-md-2 col-lg-2">
       <button class="eqrs-button-secondary focus">Cancel</button>
@@ -134,14 +223,48 @@
     <div class="col-12 col-sm-3 col-md-2 col-lg-2">
       <button class="eqrs-button-destructive">Delete</button>
     </div>
-    <!--   <span class="button-vertical-line"></span> -->
   </div>
-
   <p class="notes">Avoid placing initial focus on a destructive action.</p>
 
+ <button class="btn code-button mt-2 pull-right" (click) = "exlayout2ButtonShow = !exlayout2ButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
+
+<div class="col-md-12 code-block">
+          <div>
+          <div *ngIf="exlayout2ButtonShow">
+            <ngx-prism [language]="cssLanguage">
+             {{exlayout2ButtonContent}}
+            </ngx-prism>
+          </div>
+         </div>
+        </div>
+
+</div>
+</div>
+
+  
+
+
+<div class="card col-md-10 mt-5">
+  <div class="card-body">
   <h4>Buttons as links</h4>
   <p>For use as a minor page interaction when user remains on page after clicking.</p>
   <p><button class="eqrs-edit-link">This is a button not a link</button> </p>
+
+
+<button class="btn code-button mt-2 pull-right" (click) = "buttonlinksButtonShow = !buttonlinksButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
+
+  <div class="col-md-12 code-block">
+          <div>
+          <div *ngIf="buttonlinksButtonShow">
+            <ngx-prism [language]="cssLanguage">
+             {{buttonlinksButtonContent}}
+            </ngx-prism>
+          </div>
+         </div>
+        </div>
+
+</div>
+</div>
 
 
 
