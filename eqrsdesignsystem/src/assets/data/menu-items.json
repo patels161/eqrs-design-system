@@ -92,5 +92,39 @@
       "title": "Tooltips",
       "path": "/tooltips"
     }
+  ],
+  [
+    {
+      "title": "Date",
+      "path": "/date"
+    },
+    {
+      "title": "Dropdown Keyboard Nav",
+      "path": "/dropdownkeynav"
+    },
+    {
+      "title": "Focus on load",
+      "path": "/focusonload"
+    },
+    {
+      "title": "Phone mask",
+      "path": "/phonemask"
+    },
+    {
+      "title": "Progress circle",
+      "path": "/progresscircle"
+    },
+    {
+      "title": "Regex",
+      "path": "/regex"
+    },
+    {
+      "title": "Version check",
+      "path": "/versioncheck"
+    },
+    {
+      "title": "Numeric Directive",
+      "path": "/numeric"
+    }
   ]
 ]
