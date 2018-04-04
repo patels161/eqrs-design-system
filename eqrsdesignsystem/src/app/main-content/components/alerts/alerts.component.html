@@ -1,4 +1,4 @@
-<h1> Alerts </h1>
+<h1 #scroll> Alerts </h1>
 <hr>
 
 <p> Display at top of section </p>
@@ -169,6 +169,8 @@
       </div>  <!-- card ends here -->
 
 
+<button (click)="scroll.scrollIntoView({behavior: 'smooth'})">scroll to top</button>
+
 
 
 <!-- PREVIOUS NEXT -->
@@ -180,38 +182,3 @@
   </div>
 </div>
 
-
-
-
-<!--
-
-<button class="btn code-button mt-2" (click) = "errorShow = !errorShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
-<div *ngIf="errorShow">
-  <ngx-prism [language]="cssLanguage">
-    {{errorStatusContent}}
-  </ngx-prism>
-</div>
-
-<button class="btn code-button mt-2" (click) = "errorMultilineShow = !errorMultilineShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
-<div *ngIf="errorMultilineShow">
-  <ngx-prism [language]="cssLanguage">
-    {{errorMultilineContent}}
-  </ngx-prism>
-</div>
-
-<button class="btn code-button mt-2" (click) = "errorSinglelineShow = !errorSinglelineShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
-<div *ngIf="errorSinglelineShow">
-  <ngx-prism [language]="cssLanguage">
-    {{errorSinglelineContent}}
-  </ngx-prism>
-</div>
-
-<button class="btn code-button mt-2" (click) = "informationShow = !informationShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
-<div *ngIf="informationShow">
-  <ngx-prism [language]="cssLanguage">
-    {{informationstStatusContent}}
-  </ngx-prism>
-</div>
-
-
--->

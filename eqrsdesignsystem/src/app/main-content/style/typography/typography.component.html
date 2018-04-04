@@ -1,4 +1,4 @@
-<h1> Typography </h1>
+<h1 #scroll> Typography </h1>
 <hr>
 
 <p class="mb-4"> We use rem for all font sizing to allow for greater accessibility. One rem is equal to 18 pixels within EQRS. </p>
@@ -128,9 +128,10 @@
 
 
 
-</div>. <!-- row ends here -->
+</div><!-- row ends here -->
 
 
+<button (click)="scroll.scrollIntoView({behavior: 'smooth'})">scroll to top</button>
 
 
 <!-- PREVIOUS NEXT -->

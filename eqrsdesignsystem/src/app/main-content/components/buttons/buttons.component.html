@@ -1,4 +1,4 @@
-<h1> Buttons </h1>
+<h1 #scroll> Buttons </h1>
 <hr>
 
 <p> Use descriptive words that clearly state the action of the button, avoiding vague wording like <i>yes</i> or <i>no</i>. </p>
@@ -6,7 +6,7 @@
 
 <div class="card col-md-10">
   <div class="card-body">
-    <h4 class="pt-0 pb-3">Primary button</h4> 
+    <h4 class="pt-0 pb-3">Primary button</h4>
   	<div class="row">
     <div class="col-md-2">
       <p>Default</p>
@@ -97,7 +97,7 @@
     </div>
   </div>
 
-<button class="btn code-button mt-2 pull-right" (click) = "accentButtonShow = !accentButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
+<button class="btn code-button mt-2 pull-right" (click) = "accentButtonShow = !accentButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
 
 <div class="col-md-12 code-block">
           <div>
@@ -113,7 +113,7 @@
 </div>
 
 
-  
+
   <div class="card col-md-10 mt-5">
   <div class="card-body">
     <h4 class="pt-0 pb-3">Destructive action (non-recoverable)</h4>
@@ -133,7 +133,7 @@
     </div>
   </div>
 
-  <button class="btn code-button mt-2 pull-right" (click) = "destructiveButtonShow = !destructiveButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
+  <button class="btn code-button mt-2 pull-right" (click) = "destructiveButtonShow = !destructiveButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
 
 <div class="col-md-12 code-block">
           <div>
@@ -149,7 +149,7 @@
 </div>
 
 
-  
+
   <div class="card col-md-10 mt-5">
     <div class="card-body">
       <h4 class="pt-0 pb-3">Disabled button</h4>
@@ -158,7 +158,7 @@
     <sup>*Note hover state</sup>
   </div>
 
-<button class="btn code-button mt-2 pull-right" (click) = "disabledButtonShow = !disabledButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
+<button class="btn code-button mt-2 pull-right" (click) = "disabledButtonShow = !disabledButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
 
   <div class="col-md-12 code-block">
           <div>
@@ -196,8 +196,8 @@
   <div class="row">
     <p class="notes  offset-md-4">Place primary call to action to the right of other buttons and away from destructive wherever possible.</p>
   </div>
- 
- <button class="btn code-button mt-2 pull-right" (click) = "exlayout1ButtonShow = !exlayout1ButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
+
+ <button class="btn code-button mt-2 pull-right" (click) = "exlayout1ButtonShow = !exlayout1ButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
 
 <div class="col-md-12 code-block">
           <div>
@@ -226,7 +226,7 @@
   </div>
   <p class="notes">Avoid placing initial focus on a destructive action.</p>
 
- <button class="btn code-button mt-2 pull-right" (click) = "exlayout2ButtonShow = !exlayout2ButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
+ <button class="btn code-button mt-2 pull-right" (click) = "exlayout2ButtonShow = !exlayout2ButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
 
 <div class="col-md-12 code-block">
           <div>
@@ -241,7 +241,7 @@
 </div>
 </div>
 
-  
+
 
 
 <div class="card col-md-10 mt-5">
@@ -251,7 +251,7 @@
   <p><button class="eqrs-edit-link">This is a button not a link</button> </p>
 
 
-<button class="btn code-button mt-2 pull-right" (click) = "buttonlinksButtonShow = !buttonlinksButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button> 
+<button class="btn code-button mt-2 pull-right" (click) = "buttonlinksButtonShow = !buttonlinksButtonShow"> View code <i class="fa fa-code" aria-hidden="true"></i> </button>
 
   <div class="col-md-12 code-block">
           <div>
@@ -266,6 +266,7 @@
 </div>
 </div>
 
+<button (click)="scroll.scrollIntoView({behavior: 'smooth'})">scroll to top</button>
 
 
 
