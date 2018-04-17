@@ -45,7 +45,6 @@ h4 {
 .row-previous-next {
     background: #f1f1f1;
     padding: 1rem;
-    width: 70%;
 }
 
 .row-previous-next span {
@@ -229,7 +228,15 @@ h4 {
 }
 
 
+.scroll-to-top {
+    border: none;
+    background: inherit;
+    margin-top: -1rem;
+}
 
+#toTop {
+    color: #5b616b;
+}
 
 
 

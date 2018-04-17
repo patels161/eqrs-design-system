@@ -14,6 +14,8 @@ import {routing} from "./app-routing.module";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {ComponentsModule} from "./main-content/components/components.module";
 import { PrismModule } from '@ngx-prism/core';
+import { DirectivesComponent } from './main-content/directives/directives.component';
+import {DirectivesModule} from "./main-content/directives/directives.module";
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { PrismModule } from '@ngx-prism/core';
     GettingStartedComponent,
     StyleComponent,
     ComponentsComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,7 @@ import { PrismModule } from '@ngx-prism/core';
     GettingStartedModule,
     ComponentsModule,
     PrismModule,
+    DirectivesModule,
     routing
 ],
   providers: [ HttpClient],
