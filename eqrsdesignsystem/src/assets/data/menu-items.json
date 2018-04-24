@@ -111,16 +111,8 @@
       "path": "/phonemask"
     },
     {
-      "title": "Progress circle",
-      "path": "/progresscircle"
-    },
-    {
       "title": "Regex",
       "path": "/regex"
-    },
-    {
-      "title": "Version check",
-      "path": "/versioncheck"
     },
     {
       "title": "Numeric Directive",
