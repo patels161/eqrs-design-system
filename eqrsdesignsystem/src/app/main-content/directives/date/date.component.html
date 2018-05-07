@@ -1,14 +1,14 @@
-<h1 #scroll> Date Directive </h1>
+<h1 #scroll> Date </h1>
 <hr>
 
 <p> Date Pipe is used to format isoDateStringNoTime 'yyyy-MM-dd' to default 'MM/DD/YYYY' or a specified format.</p>
 
 <div>
   <b>[required]="true"</b> <br>
-  will trigger trigger required validation and will throw 'required' error <br><br>
-  <b>[minValue]="'1973-01-01'"</b> <br> will trigger trigger minimum date validation if the user provided date is before '1973-01-01'
+  will trigger required validation and will throw 'required' error <br><br>
+  <b>[minValue]="'1973-01-01'"</b> <br> will trigger minimum date validation if the user provided date is before '1973-01-01'
   and will throw 'minDate' error <br><br>
-  <b>[maxValue]="'2010-01-01'"</b> <br> will trigger trigger maximum date validation if the user provided date is after '2000-01-01'
+  <b>[maxValue]="'2010-01-01'"</b> <br> will trigger maximum date validation if the user provided date is after '2000-01-01'
   and will throw 'maxDate' error <br><br>
   <b>[setErrorStyle]="form.controls['dateControl'].touched && form.controls['dateControl'].invalid" </b><br>
   The setErroStyle attribute accepts the condition when the error styling needs to be applied. <br><br>
