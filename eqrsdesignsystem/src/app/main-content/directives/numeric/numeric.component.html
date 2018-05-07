@@ -3,20 +3,23 @@
 
 <p> Numeric Directive when applied to input element restricts the user form entering anything other than numbers.</p>
 
-
-    <button class="btn code-button mt-2" (click) = "show = !show">
-       View code <i class="fa fa-code" aria-hidden="true"></i>
-    </button>
-
-    <div class="col-md-12 code-block">
-      <div>
-        <div *ngIf="show">
-          <ngx-prism [language]="cssLanguage">
-            {{content}}
-          </ngx-prism>
-        </div>
-      </div>
+<div>
+  1. Import <b>NumericDirectiveModule</b>
+    <div class="col-md-12">
+      <ngx-prism [language]="cssLanguage">
+            {{numericModule}}
+      </ngx-prism>
     </div>
+</div>
+
+<div>
+  1. Add the directive to the html element
+    <div class="col-md-12">
+        <ngx-prism [language]="cssLanguage">
+          {{numericContent}}
+        </ngx-prism>
+    </div>
+</div>
 
 <div class="row row-previous-next ml-0 mt-5">
   <div class="col-lg-12">

@@ -7,13 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NumericComponent implements OnInit {
   cssLanguage = 'css';
-  show: boolean = false;
-  content: any;
+  numericContent: any;
+  numericModule: any;
 
   constructor() { }
 
   ngOnInit() {
-    this.content = '<input numeric name="xyz" >';
+    this.numericModule =
+      `@NgModule({
+              imports: [
+               NumericDirectiveModule
+              ],
+              declarations: [AppComponent],
+              bootstrap: [AppComponent] 
+            })
+            export class AppModule { }`;
+
+    this.numericContent = '<input numeric name="xyz" >';
   }
 
 }
