@@ -1,3 +1,27 @@
-<p>
-  focus-on-lload works!
-</p>
+<h1 #scroll> Focus on load </h1>
+<hr>
+
+<p> FocusOnLoadDirective is used to focus on a specific element when the page loads.</p>
+
+<div>
+  <button class="btn code-button mt-2" (click) = "focusShow = !focusShow">
+    View code <i class="fa fa-code" aria-hidden="true"></i>
+  </button>
+</div>
+
+<div class="col-md-12 code-block">
+  <div>
+    <div *ngIf="focusShow">
+      <ngx-prism [language]="cssLanguage">
+        {{focusContent}}
+      </ngx-prism>
+    </div>
+  </div>
+</div>
+
+<div class="row row-previous-next ml-0">
+  <div class="col-lg-10">
+    <span [routerLink] = "['/dropdownkeynav']"> <i class="fa fa-chevron-left"></i> Previous: <b>Dropdown Keyboard Nav</b> </span>
+    <span [routerLink] = "['/phonemask']" class="pull-right"> Next: <b>Phone Mask</b> <i class="fa fa-chevron-right"></i> </span>
+  </div>
+</div>
