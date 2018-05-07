@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./focus-on-load.component.css']
 })
 export class FocusOnLoadComponent implements OnInit {
-  focusShow : boolean = false;
   focusContent: any;
   cssLanguage = 'css';
   constructor() { }

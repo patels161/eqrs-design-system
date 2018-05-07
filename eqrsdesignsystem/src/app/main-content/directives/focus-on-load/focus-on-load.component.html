@@ -3,20 +3,10 @@
 
 <p> FocusOnLoadDirective is used to focus on a specific element when the page loads.</p>
 
-<div>
-  <button class="btn code-button mt-2" (click) = "focusShow = !focusShow">
-    View code <i class="fa fa-code" aria-hidden="true"></i>
-  </button>
-</div>
-
-<div class="col-md-12 code-block">
-  <div>
-    <div *ngIf="focusShow">
+<div class="col-md-12">
       <ngx-prism [language]="cssLanguage">
         {{focusContent}}
       </ngx-prism>
-    </div>
-  </div>
 </div>
 
 <div class="row row-previous-next ml-0">
