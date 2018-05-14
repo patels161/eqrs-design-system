@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./focus-on-load.component.css']
 })
 export class FocusOnLoadComponent implements OnInit {
-
+  focusContent: any;
+  cssLanguage = 'css';
   constructor() { }
 
   ngOnInit() {
+    this.focusContent = '<input focusOnLoad name="xyz">';
   }
 
 }

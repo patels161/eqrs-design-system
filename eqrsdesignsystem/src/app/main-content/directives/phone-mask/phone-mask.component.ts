@@ -8,11 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class PhoneMaskComponent implements OnInit {
   htmlLanguage = 'html';
   phoneMaskContent: any;
-  phoneMaskShow: boolean = false;
+  phoneMaskModule: any;
   constructor() { }
 
   ngOnInit() {
-    this.phoneMaskContent = '' + '<input id="input-date2" formControlName="inputControl" phone>\n';
+    this.phoneMaskContent ='<input id="input-date2" formControlName="inputControl" phone>\n';
+    this.phoneMaskModule =  `@NgModule({
+             imports: [
+                PhoneMaskModule
+             ],
+             declarations: [AppComponent],
+             bootstrap: [AppComponent]
+       })
+       export class AppModule { }`;
   }
 
 }

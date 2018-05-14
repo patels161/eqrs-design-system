@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegexComponent implements OnInit {
 
+  regexContent: any;
+  cssLanguage = 'css';
   constructor() { }
 
   ngOnInit() {
+    this.regexContent = '<input regex="[1-9][0-9]" name="input_field" [(ngModel)]="field">';
   }
 
 }
