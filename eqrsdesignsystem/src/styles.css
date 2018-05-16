@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container-fluid {
-    background: #f1f1f1;
+    background: #fff;
 }
 
 main.col-md-9.ml-sm-auto.col-lg-10.pt-3.px-4 {
@@ -43,12 +43,18 @@ h4 {
 }
 
 .row-previous-next {
-    background: #f1f1f1;
+    background: #fff;
     padding: 1rem;
+    border-top: 1px solid #d6d7d9;
 }
 
 .row-previous-next span {
-    color: #0071bc;
+    color: #28a745;
+    cursor: pointer;
+}
+
+.row-previous-next span:hover {
+    color: #112e51;
     cursor: pointer;
 }
 
@@ -218,9 +224,11 @@ h4 {
 }
 
 .btn.code-button {
-    color: #112e51;
-    text-decoration: underline;
-    padding: 0;
+    color: #fff;
+    background: #28a745;
+    text-decoration: none;
+    padding: 0.3rem;
+    font-size: 0.8rem;
 }
 
 .code-block {
@@ -231,10 +239,14 @@ h4 {
 .scroll-to-top {
     border: none;
     background: inherit;
-    margin-top: -1rem;
+    margin-top: -0.6rem;
 }
 
 #toTop {
+    color: #d6d7d9;
+}
+
+#toTop:hover {
     color: #5b616b;
 }
 
