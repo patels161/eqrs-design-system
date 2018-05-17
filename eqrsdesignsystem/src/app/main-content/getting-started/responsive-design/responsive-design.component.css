@@ -1,0 +1,18 @@
+.responsive-design-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16rem;
+    padding: 1em;
+    background-color: #e7f4e4;
+    background-image: url(assets/images/responsive.svg);
+    height: 15rem;
+}
+
+.responsive-design .col-md-8 {
+	background-color: #e7f4e4 ;
+}
+
+.responsive-design h3 {
+    padding: 1.6rem 1.1rem 0.4rem;
+    color: #112e51;
+}
