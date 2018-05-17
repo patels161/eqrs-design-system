@@ -1,6 +1,23 @@
 .btn-content {
     text-align: center;
-    background: #f3fafe;
+    background: #0071bc;
     padding: 5rem 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 35px;
+}
+
+.row.principles-botton .btn-content:nth-child(odd) {
+    background: #fff;
+    color: #0071bc;
+}
+
+.row.principles-top .btn-content:nth-child(even) {
+    background: #fff;
+    color: #0071bc;
+    border-top: 1px solid #ccc;
+}
+
+.row.principles-top, .row.principles-botton {
+    margin: 0;
 }

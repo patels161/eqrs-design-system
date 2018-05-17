@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
+h1 {
+    color: #112e51;
+}
+
 .btn {
     cursor: pointer;
 }
@@ -49,7 +53,7 @@ h4 {
 }
 
 .row-previous-next span {
-    color: #28a745;
+    color: #0071bc;
     cursor: pointer;
 }
 
