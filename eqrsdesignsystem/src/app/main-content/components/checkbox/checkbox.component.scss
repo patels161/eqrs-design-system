@@ -3,6 +3,14 @@ $eqrs-primary-color: #0071bc;
 $eqrs-secondary-color: #5b616b;
 $eqrs-box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
 
+h4 {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3em;
+  color: #323a45;
+}
+
 [type=checkbox]:focus + label::before {
   box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0071bc, 0 0 3px 4px #3e94cf, 0 0 7px 4px #3e94cf;
 }
