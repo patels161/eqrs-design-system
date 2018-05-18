@@ -4,6 +4,41 @@
 @import "~prismjs/themes/prism.css";
 @import '~prismjs/themes/prism-coy.css';
 
+
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+$eqrs-primary-color: #0071bc;
+$eqrs-primary-darker: #205493;
+$eqrs-primary-darkest: #112e51;
+$eqrs-secondary-color: #5b616b;
+$eqrs-secondary-darker: #323a45;
+$eqrs-tertiary-color: #d6d7d9;
+$eqrs-accent-color: #fdb81e;
+$eqrs-accent-darker: #d99502;
+$eqrs-accent-darkest: #bb8002;
+$eqrs-success-color: #009e51;
+$eqrs-alert-color: #cd2026;
+$eqrs-alert-darker: #981b1e;
+$eqrs-text-color: #323a45;
+$eqrs-background-color: #f1f1f1;
+$eqrs-background-alt: #f3fafe;
+$eqrs-focus-color: #3e94cf;
+$eqrs-focus-alt: #e7e7e7;
+$eqrs-visited-color: #4c2c92;
+$eqrs-alert-information: #e1f3f8;
+$eqrs-alert-error: #f9dede;
+$eqrs-alert-warning: #fff1d2;
+$eqrs-alert-success: #e7f4e4;
+
+$eqrs-box-shadow: 0 0 3px #3e94cf, 0 0 7px #3e94cf;
+
+$eqrs-border-radius: 3px;
+$eqrs-serif-font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+$eqrs-sans-serif-font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+
+
 h1, h2, h3, h4, h5 {
     font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
     margin-bottom: .5rem;
@@ -11,17 +46,33 @@ h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
+h1 {
+    color: #112e51;
+}
+
+a {
+    color: #0071bc;
+}
+
+h1.sidebar-heading {
+    color: #fff;
+}
+
 .btn {
     cursor: pointer;
 }
 
 .container-fluid {
-    background: #f1f1f1;
+    background: #fff;
 }
 
 main.col-md-9.ml-sm-auto.col-lg-10.pt-3.px-4 {
     padding-left: 5rem !important;
     padding-top: 3rem !important;
+}
+
+.dark-blue {
+    color: #112e51;
 }
 
 .row-no-flex {
@@ -34,7 +85,7 @@ main.col-md-9.ml-sm-auto.col-lg-10.pt-3.px-4 {
 
 h4 {
     font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     line-height: 1.3em;
     text-transform: uppercase;
@@ -43,12 +94,18 @@ h4 {
 }
 
 .row-previous-next {
-    background: #f1f1f1;
+    background: #fff;
     padding: 1rem;
+    border-top: 1px solid #d6d7d9;
 }
 
 .row-previous-next span {
     color: #0071bc;
+    cursor: pointer;
+}
+
+.row-previous-next span:hover {
+    color: #112e51;
     cursor: pointer;
 }
 
@@ -218,9 +275,11 @@ h4 {
 }
 
 .btn.code-button {
-    color: #112e51;
-    text-decoration: underline;
-    padding: 0;
+    color: #fff;
+    background: #28a745;
+    text-decoration: none;
+    padding: 0.3rem;
+    font-size: 0.8rem;
 }
 
 .code-block {
@@ -231,10 +290,14 @@ h4 {
 .scroll-to-top {
     border: none;
     background: inherit;
-    margin-top: -1rem;
+    margin-top: -0.6rem;
 }
 
 #toTop {
+    color: #d6d7d9;
+}
+
+#toTop:hover {
     color: #5b616b;
 }
 

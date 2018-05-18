@@ -9,7 +9,6 @@ import {DropdownComponent} from "./dropdown/dropdown.component";
 import {InputsComponent} from "./inputs/inputs.component";
 import {LabelsComponent} from "./labels/labels.component";
 import {ModalComponent} from "./modal/modal.component";
-import {OverviewComponent} from "./overview/overview.component";
 import {ProgressIndicatorComponent} from "./progress-indicator/progress-indicator.component";
 import {RadioButtonComponent} from "./radio-button/radio-button.component";
 import {SearchComponent} from "./search/search.component";
@@ -33,7 +32,6 @@ import { TooltipsComponent } from './tooltips/tooltips.component';
     InputsComponent,
     LabelsComponent,
     ModalComponent,
-    OverviewComponent,
     ProgressIndicatorComponent,
     RadioButtonComponent,
     SearchComponent,
