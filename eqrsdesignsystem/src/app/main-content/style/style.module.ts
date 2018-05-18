@@ -1,5 +1,4 @@
 import {ColorsComponent} from "./colors/colors.component";
-import {GridComponent} from "./grid/grid.component";
 import {IconographyComponent} from "./iconography/iconography.component";
 import {TypographyComponent} from "./typography/typography.component";
 import {NgModule} from "@angular/core";
@@ -11,6 +10,6 @@ import {PrismModule} from "@ngx-prism/core";
     StyleRouting,
     PrismModule
   ],
-  declarations: [ColorsComponent, GridComponent, IconographyComponent, TypographyComponent]
+  declarations: [ColorsComponent, IconographyComponent, TypographyComponent]
 })
 export class StyleModule { }

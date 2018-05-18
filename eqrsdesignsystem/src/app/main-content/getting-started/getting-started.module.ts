@@ -1,6 +1,5 @@
 import {NgModule} from "@angular/core";
 import {AccessibilityComponent} from "./accessibility/accessibility.component";
-import {GuidelinesComponent} from "./guidelines/guidelines.component";
 import {PrinciplesComponent} from "./principles/principles.component";
 import {ResponsiveDesignComponent} from "./responsive-design/responsive-design.component";
 import {GettingStartedRouting} from "./getting-started-routing.module";
@@ -9,6 +8,6 @@ import {GettingStartedRouting} from "./getting-started-routing.module";
   imports: [
     GettingStartedRouting
   ],
-  declarations: [AccessibilityComponent, GuidelinesComponent, PrinciplesComponent, ResponsiveDesignComponent]
+  declarations: [AccessibilityComponent, PrinciplesComponent, ResponsiveDesignComponent]
 })
 export class GettingStartedModule { }

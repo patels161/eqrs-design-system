@@ -5,10 +5,6 @@
       "path": "/principles"
     },
     {
-      "title": "Guidelines",
-      "path": "/guidelines"
-    },
-    {
       "title": "Accessibility",
       "path": "/accessibility"
     },
@@ -23,10 +19,6 @@
       "path": "/colors"
     },
     {
-      "title": "Grid",
-      "path": "/grid"
-    },
-    {
       "title": "Iconography",
       "path": "/iconography"
     },
@@ -36,10 +28,6 @@
     }
   ],
   [
-    {
-      "title": "Overview",
-      "path": "/overview"
-    },
     {
       "title": "Accordion",
       "path": "/accordion"
